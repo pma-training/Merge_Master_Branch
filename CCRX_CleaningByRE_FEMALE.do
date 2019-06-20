@@ -16,7 +16,7 @@
 
 *RE Jennifer Lopez
 *created forms without linking household for EA1/structure/1household1
-*drop if metainstanceID=="somemetainstanceID"
+drop if metainstanceID=="somemetainstanceID"
 /*
 *Christine-Nafula 66 Alice & Leah[The data is not completely the same and though the name is the same kept the one done on the 3rd visit
 drop if metainstanceID=="uuid:7919e3b6-3e59-45d3-91d7-14bb2aaada3b"
