@@ -52,11 +52,11 @@ set maxvar 30000
 *******************************************************************************
 *BEFORE USE THE FOLLOWING NEED TO BE UPDATED:
 *Country/Round/Abbreviations
-global Country CD	 
+global Country BF	 
 global Round Round7
 global round 7
-global country CD
-global CCRX CDR7
+global country BF
+global CCRX BFR7
 
 *Locals (Dont need to Update)
 local Country "$Country"
@@ -64,14 +64,14 @@ local Round "$Round"
 local CCRX "$CCRX"
 
 *Year of the Survey
-local SurveyYear 2018 
-local SYShort 18 
+local SurveyYear 2019 
+local SYShort 19
 
 ******CSV FILE NAMES ****
 *HHQ CSV File name 
-global HHQcsv CDR7_Household_Questionnaire_v6
+global HHQcsv BFR7_Household_Questionnaire_v6
 *FQ CSV File name
-global FQcsv CDR7_Female_Questionnaire_v6
+global FQcsv BFR7_Female_Questionnaire_v6
 
 ***If the REs used a second version of the form, update these 
 *If they did not use a second version, DONT UPDATE 
@@ -83,16 +83,16 @@ global FQcsv CDR7_Female_Questionnaire_v6
 
 *******DO FILE NAMES******
 *HHQ_DataChecking File Name
-local HHQdofile CCRX_HHQ_Datachecking_v19.0_25Sep2018_AR
+local HHQdofile CCRX_HHQ_Datachecking
 
 *FRQ_DataChecking File Name
-local FRQdofile CCRX_FRQ_DataChecking_v27.0_15Jun2018_AR
+local FRQdofile CCRX_FRQ_DataChecking
 
 *HHQmember_DataChecking File Name
-local HHQmemberdofile CCRX_HHQmember_DataChecking_v7.0_30Oct2017_BL
+local HHQmemberdofile CCRX_HHQmember_DataChecking
 
 *WASH do file
-local WASHdofile CCRX_WASH_v19.0_24Apr2018
+local WASHdofile CCRX_WASH
 
 *CleaningByRE_Female date and initials
 local CleanFemaledate 05Oct2015
@@ -104,10 +104,10 @@ local hhq_monit CCRX_HHQ_GeoMonitoring
 local CleanHHQdate 05Oct2015
 
 *Country Specific Clean Weight and initials
-local CountrySpecificdate v30.1_28Sep2018
+local CountrySpecificdate 
 
 *Country/Round specific module
-local module1do CCRX_CCP_v1_14Nov2017_SJ
+*local module1do CCRX_CCP_v1_14Nov2017_SJ
 /*local module2do CCRX_InjectablesSC_v8_28Mar2018_BL
 local module3do CCRX_Abortion_v06_13Jul2018_sob
 local module4do CCRX-AbtModuleDataChecking-v06-13Jul2018-sob
@@ -119,7 +119,7 @@ local module4do CCRX-AbtModuleDataChecking-v06-13Jul2018-sob
 ************
 
 **** GEOGRAPHIC IDENTIFIERS ****
-global GeoID "level1 level2 level3 level4 EA"
+global GeoID "level1 level2 level3 EA"
 
 *Geographic Identifier lower than EA to household
 global GeoID_SH "structure household"
@@ -129,7 +129,7 @@ global GeoID_SH "structure household"
 global level1name level1
 global level2name level2
 global level3name level3
-global level4name level4
+*global level4name level4
 
 *Number of households selected per EA
 global EAtake=35
